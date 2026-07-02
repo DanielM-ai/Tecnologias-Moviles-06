@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Conversor de Monedas</string>
+    <string-array name="monedas">
+        <item>Dólar (USD)</item>
+        <item>Nuevo Sol (PEN)</item>
+        <item>Euro (EUR)</item>
+        <item>Libra (GBP)</item>
+        <item>Rupia (INR)</item>
+        <item>Real (BRL)</item>
+        <item>Peso Mexicano (MXN)</item>
+        <item>Yuan (CNY)</item>
+        <item>Yen (JPY)</item>
+    </string-array>
+</resources>

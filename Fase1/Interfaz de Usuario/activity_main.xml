@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor Múltiple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Ingreso de cantidad -->
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa cantidad a convertir"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Moneda de Origen:" />
+
+    <!-- Selector de Origen -->
+    <Spinner
+        android:id="@+id/spinnerOrigen"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:entries="@array/monedas"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Moneda de Destino:" />
+
+    <!-- Selector de Destino -->
+    <Spinner
+        android:id="@+id/spinnerDestino"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:entries="@array/monedas"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Botón -->
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Texto para mostrar resultado -->
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Resultado: 0.00"/>
+</LinearLayout>
